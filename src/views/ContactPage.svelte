@@ -16,11 +16,11 @@ export let currentRoute;
         <input class="border-b-2 outline-none" type="text" />
       </div>
       <div class="my-2">
-        <label class="text-xl">  Priority </label>
+        <label class="text-xl">  Age </label>
         <input class="border-b-2 outline-none" type="text" />
       </div>
       <div class="my-2">
-        <label class="text-xl"> Description </label>
+        <label class="text-xl"> Related How </label>
         <input class="border-b-2 outline-none" type="text" />
       </div>
     </form>

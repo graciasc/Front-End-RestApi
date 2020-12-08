@@ -23,6 +23,7 @@
     "sirv-cli": "^1.0.0",
     "svelte-router-spa": "^5.8.1",
     "svelte-routing": "^1.4.2",
-    "svelte-spa-router": "^3.1.0"
+    "svelte-spa-router": "^3.1.0",
+    "vercel": "^21.0.1"
   }
 }
