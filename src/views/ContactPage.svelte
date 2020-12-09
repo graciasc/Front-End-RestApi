@@ -81,7 +81,7 @@
   <div class="font-mono text-gray-800 bg-purple-700 ">
     <div class="text-center py-6">
       <h1 class="text-2xl">Contact List</h1>
-      <h1 class="pt-4 text-red-500  font-bold text-lg">Create</h1>
+      <h1 class="pt-4 text-white font-bold text-lg">Create</h1>
     </div>
 
     <div class="text-center">
