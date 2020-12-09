@@ -19,7 +19,7 @@ import { Router } from 'svelte-router-spa'
   }
 </style>
 
-<main class="text-center p-4 max-w-xs mx-auto sm:max-w-none">
+<main class="text-center  m-4 max-w-xs mx-auto sm:max-w-none">
   <div class="font-mono">
     <link
       rel="stylesheet"
@@ -37,22 +37,22 @@ import { Router } from 'svelte-router-spa'
           id="menu-toggle"
           class="float-right mt-4 hidden" />
         <div class="pt-3 hidden" id="menu">
-          <nav class="cursor-pointer font-bold">
+          <nav class="cursor-pointer">
             <ul>
-              <li class="hover:text-teal-400"><a href="/Gracias">Gracias </a></li>
-              <li class="hover:text-teal-400">Connor</li>
+              <li class="hover:text-teal-400 font-mono font-thin"><a href="/Gracias">Gracias </a></li>
+              <li class="hover:text-teal-400 font-mono font-thin"><a href="/Connor">Connor </a></li>
             </ul>
           </nav>
         </div>
         <div class="lg:inline lg:float-right hidden lg:text-xl -my-10">
           <button
-            class="px-2 lg:font-bold lg:mt-3 border-transparent border-b-2
-            hover:border-teal-600 focus:outline-none outline-none">
+            class="px-2 lg:font-thin lg:mt-3 border-transparent border-b-2
+            hover:border-teal-600 focus:outline-none outline-none font-mono font-thin">
            <a href="/gracias">Gracias </a> 
           </button>
           <button
-            class="px-2 border-transparent lg:mt-3 lg:font-bold border-b-2
-            hover:border-teal-600 focus:outline-none outline-none">
+            class="px-2 border-transparent lg:mt-3 lg:font-thin border-b-2
+            hover:border-teal-600 focus:outline-none outline-none font-mono font-thin" >
              <a href="/connor">Connor </a> 
           </button>
         </div>
