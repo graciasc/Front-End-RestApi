@@ -80,7 +80,7 @@
 <main>
   <div class="font-mono text-gray-800 bg-purple-700 ">
     <div class="text-center py-6">
-      <h1 class="text-2xl">Contact List</h1>
+      <h1 class="text-2xl text-white">Contact List</h1>
       <h1 class="pt-4 text-green-200 font-bold text-lg">Create</h1>
     </div>
 
@@ -119,12 +119,12 @@
         <div class="">
           <label class="text-lg text-white"> Search </label>
           <input
-            class="border-b-2 outline-none rounded-md bg-red-500"
+            class="border-b-2 outline-none rounded-md"
             bind:value={deleteContact.name}
             type="text" />
         </div>
         <button
-          class="bg-blue-300 hover:text-gray-500 text-white text-lg rounded-md shadow-md px-4 mb-2 mx-4 focus:outline-none focus:ring focus:border-blue-600 "
+          class="bg-red-500 hover:text-gray-500 text-white text-lg rounded-md shadow-md px-4 mb-2 mx-4 focus:outline-none focus:ring focus:border-blue-600 "
           on:click={handleDeleteContact}>Delete</button>
       </div>
     </div>
