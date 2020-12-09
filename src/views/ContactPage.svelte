@@ -22,7 +22,7 @@ export let currentRoute;
         <input class="border-b-2 outline-none" type="text" />
       </div>
       <div class="my-2">
-        <label class="text-xl"> RelatedHow </label>
+        <label class="text-xl"> Relation </label>
         <input class="border-b-2 outline-none" type="text" />
       </div>
       <div class="py-6">
