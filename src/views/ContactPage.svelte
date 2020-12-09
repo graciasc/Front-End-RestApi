@@ -78,7 +78,7 @@
 </script>
 
 <main>
-  <div class="font-mono text-gray-800 ">
+  <div class="font-mono text-gray-800 bg-purple-700 ">
     <div class="text-center py-6">
       <h1 class="text-2xl">Contact List</h1>
       <h1 class="pt-4 text-red-500  font-bold text-lg">Create</h1>
@@ -114,7 +114,7 @@
     </div>
     <!-- LIST  -->
     <div class="bg-blue-500 h-1/2 py-12 ">
-      <h1 class="text-center text-red-500 pb-6 text-lg font-bold " b>Delete</h1>
+      <h1 class="text-center text-white pb-6 text-lg font-bold " b>Delete</h1>
       <div class="m-6 flex justify-center">
         <div class="">
           <label class="text-lg text-white"> Search </label>
@@ -129,7 +129,7 @@
       </div>
     </div>
 
-    <div class="bg-pink-500 h-1/2 py-12">
+    <div class="bg-green-400 h-1/2 py-12">
       <h1 class="text-center text-white pb-6 text-lg font-bold">List</h1>
       <div class="text-center">
         <ul>
