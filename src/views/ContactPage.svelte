@@ -113,7 +113,7 @@
       </div>
     </div>
     <!-- LIST  -->
-    <div class="bg-gray-400 h-1/2 py-12 ">
+    <div class="bg-blue-500 h-1/2 py-12 ">
       <h1 class="text-center text-red-500 pb-6 text-lg font-bold " b>Delete</h1>
       <div class="m-6 flex justify-center">
         <div class="">
@@ -129,7 +129,7 @@
       </div>
     </div>
 
-    <div class="bg-red-500 h-1/2 py-12">
+    <div class="bg-pink-500 h-1/2 py-12">
       <h1 class="text-center text-white pb-6 text-lg font-bold">List</h1>
       <div class="text-center">
         <ul>
