@@ -16,7 +16,7 @@
   };
 
   onMount(async () => {
-    const res = await fetch(`${localApi}/contact/list`);
+    const res = await fetch(`${mobileApiUri}/contact/list`);
     contactData = [...(await res.json())];
     console.log(contactData);
   });
@@ -32,7 +32,7 @@
       });
       return;
     }
-    await fetch(`${localApi}/contact/create`, {
+    await fetch(`${mobileApiUri}/contact/create`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -60,7 +60,7 @@
       });
       return;
     }
-    await fetch(`${localApi}/contact/delete`, {
+    await fetch(`${mobileApiUri}/contact/delete`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
