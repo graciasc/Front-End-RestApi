@@ -86,23 +86,23 @@
 
     <div class="text-center">
       <div class="">
-        <label class="text-xl text-green-200"> Name </label>
+        <label class="text-xl text-green-200"> Name: </label>
         <input
-          class="border-b-2 outline-none"
+          class="border-b-2 outline-none rounded-md"
           bind:value={contact.name}
           type="text" />
       </div>
       <div class="my-2">
-        <label class="text-xl text-green-200"> Age </label>
+        <label class="text-xl text-green-200"> Age: </label>
         <input
-          class="border-b-2 outline-none"
+          class="border-b-2 outline-none rounded-md"
           bind:value={contact.age}
           type="text" />
       </div>
       <div class="my-2">
-        <label class="text-xl text-green-200"> RelatedHow </label>
+        <label class="text-xl text-green-200"> Relation: </label>
         <input
-          class="border-b-2 outline-none"
+          class="border-b-2 outline-none rounded-md"
           type="text"
           bind:value={contact.relatedHow} />
       </div>
@@ -116,10 +116,10 @@
     <div class="bg-blue-500 h-1/2 py-12 ">
       <h1 class="text-center text-white pb-6 text-lg font-bold " b>Delete</h1>
       <div class="m-6 flex justify-center">
-        <div class="bg-red-500">
+        <div class="">
           <label class="text-lg text-white"> Search </label>
           <input
-            class="border-b-2 outline-none rounded-md"
+            class="border-b-2 outline-none rounded-md bg-red-500"
             bind:value={deleteContact.name}
             type="text" />
         </div>
