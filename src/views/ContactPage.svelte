@@ -81,26 +81,26 @@
   <div class="font-mono text-gray-800 bg-purple-700 ">
     <div class="text-center py-6">
       <h1 class="text-2xl">Contact List</h1>
-      <h1 class="pt-4 text-white font-bold text-lg">Create</h1>
+      <h1 class="pt-4 text-green-200 font-bold text-lg">Create</h1>
     </div>
 
     <div class="text-center">
       <div class="">
-        <label class="text-xl"> Name </label>
+        <label class="text-xl text-green-200"> Name </label>
         <input
           class="border-b-2 outline-none"
           bind:value={contact.name}
           type="text" />
       </div>
       <div class="my-2">
-        <label class="text-xl"> Age </label>
+        <label class="text-xl text-green-200"> Age </label>
         <input
           class="border-b-2 outline-none"
           bind:value={contact.age}
           type="text" />
       </div>
       <div class="my-2">
-        <label class="text-xl"> RelatedHow </label>
+        <label class="text-xl text-green-200"> RelatedHow </label>
         <input
           class="border-b-2 outline-none"
           type="text"
@@ -116,7 +116,7 @@
     <div class="bg-blue-500 h-1/2 py-12 ">
       <h1 class="text-center text-white pb-6 text-lg font-bold " b>Delete</h1>
       <div class="m-6 flex justify-center">
-        <div class="">
+        <div class="bg-red-500">
           <label class="text-lg text-white"> Search </label>
           <input
             class="border-b-2 outline-none rounded-md"
