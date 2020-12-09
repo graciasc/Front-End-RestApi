@@ -36,7 +36,7 @@ import { Router } from 'svelte-router-spa'
           type="checkbox"
           id="menu-toggle"
           class="float-right mt-4 hidden" />
-        <div class="pt-3 hidden" id="menu">
+        <div class="hidden" id="menu">
           <nav class="cursor-pointer">
             <ul>
               <li class="hover:text-teal-400 font-mono font-thin"><a href="/Gracias">Gracias </a></li>
