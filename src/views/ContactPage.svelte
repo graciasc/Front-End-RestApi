@@ -1,5 +1,30 @@
 <script>
 export let currentRoute;
+
+const mobileApiUri = 'https://mobile-app-i.herokuapp.com'
+const localApi = 'http://localhost:3000'
+const contact = {
+  name: '',
+  age: '',
+  relatedHow: ''
+}
+const handleAddContact = async () => {
+
+  await fetch(`${localApi}/contact/create`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({...contact})
+    });
+}
+
+const handleDeleteContact = async() =>  {
+  await fetch(`${mobileApiUri}/contact/delete`, {
+    method: 'DELETE',
+    body: {}
+  })
+}
 </script>
 
 
@@ -15,18 +40,18 @@ export let currentRoute;
     <div class="text-center">
       <div class="">
         <label class="text-xl"> Name </label>
-        <input class="border-b-2 outline-none" type="text" />
+        <input class="border-b-2 outline-none" bind:value={contact.name} type="text" />
       </div>
       <div class="my-2">
         <label class="text-xl"> Age </label>
-        <input class="border-b-2 outline-none" type="text" />
+        <input class="border-b-2 outline-none" bind:value={contact.age} type="text" />
       </div>
       <div class="my-2">
         <label class="text-xl"> RelatedHow </label>
-        <input class="border-b-2 outline-none" type="text" />
+        <input class="border-b-2 outline-none" type="text" bind:value={contact.relatedHow} />
       </div>
       <div class="py-6">
-        <button class="bg-blue-300 text-white rounded-md shadow-md p-2 mx-2 my-4 focus:outline-none focus:ring focus:border-blue-600">Create</button>
+        <button class="bg-blue-300 hover:text-gray-500 text-white rounded-md shadow-md p-2 mx-2 my-4 focus:outline-none focus:ring focus:border-blue-600" on:click={handleAddContact}>Create</button>
       </div>
     </div>
   
@@ -38,7 +63,7 @@ export let currentRoute;
           <label class="text-lg text-white"> Search </label>
           <input class="border-b-2 outline-none rounded-md" type="text" />
         </div>
-        <button class="bg-blue-300 text-white text-lg rounded-md shadow-md px-4 mb-2 mx-4 focus:outline-none focus:ring focus:border-blue-600 ">Delete</button>
+        <button class="bg-blue-300 hover:text-gray-500 text-white text-lg rounded-md shadow-md px-4 mb-2 mx-4 focus:outline-none focus:ring focus:border-blue-600 ">Delete</button>
   
         <!-- <ul>
           <li>Testing</li>
