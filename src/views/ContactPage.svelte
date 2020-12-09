@@ -32,7 +32,7 @@ const handleDeleteContact = async() =>  {
 
   <div class="font-mono text-gray-800 ">
     <div class="text-center py-6">
-      <h1 class="text-2xl">To Do List</h1>
+      <h1 class="text-2xl">Contact List</h1>
       <h1 class="pt-4 text-red-500  font-bold text-lg">Create</h1>
     </div>
     
