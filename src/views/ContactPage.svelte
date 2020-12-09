@@ -119,13 +119,13 @@
         <div class="">
           <label class="text-lg text-white"> Search </label>
           <input
+            placeholder="delete by name field"
             class="border-b-2 outline-none rounded-md"
             bind:value={deleteContact.name}
             type="text" />
         </div>
         <button
           class="bg-red-500 hover:text-gray-500 text-white text-lg rounded-md shadow-md px-4 mb-2 mx-4 focus:outline-none focus:ring focus:border-blue-600 "
-          placeholder="delete by name field"
           on:click={handleDeleteContact}>Delete</button>
       </div>
     </div>
