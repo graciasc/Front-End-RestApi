@@ -22,7 +22,7 @@
   });
 
   const handleAddItem = async () => {
-    if (!(list.name && list.age && list.relatedHow)) {
+    if (!(list.name && list.priority && list.description)) {
       Swal.fire({
         title: "Warning",
         text: "Must have fields filled out to CREATE.",
@@ -65,7 +65,7 @@
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ ...deletelist }),
+      body: JSON.stringify({...deleteList}),
     });
     Swal.fire({
       title: "Success",
@@ -134,7 +134,7 @@
       <div class="text-center">
         <ul>
           {#each itemData as itemD}
-            <li class="my-2 text-md text-gray-800">{JSON.stringify(itemD,  null, 2)}</li>
+            <li class="my-2 text-md text-white">{JSON.stringify(itemD,  null, 2)}</li>
           {:else}
             <p>No Data today!</p>
           {/each}
