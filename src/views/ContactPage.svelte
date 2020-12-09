@@ -37,7 +37,7 @@
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name: "Test" }),
+      body: JSON.stringify({...contact}),
     });
 
     Swal.fire({
